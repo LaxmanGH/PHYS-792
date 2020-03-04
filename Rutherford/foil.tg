@@ -1,0 +1,7 @@
+:volu hall BOX 1*cm 0.5*cm 0.5*cm G4_Galactic
+:volu foil BOX 2*micrometer 0.4*cm 0.4*cm G4_Au
+:rotm r000 0 0 0
+:place foil 1 hall r000 0 0 0
+
+:color foil 1 1 0
+:vis hall OFF
