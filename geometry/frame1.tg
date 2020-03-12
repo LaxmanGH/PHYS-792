@@ -1,0 +1,25 @@
+:volu world BOX 10*m 10*m 10*m G4_AIR
+
+:rotm r000 0 0 0
+
+:solid box1 BOX 9*m 9*m 9*m 
+:solid box2 BOX 9.2*m 8.5*m 8.5*m
+:solid box3 BOX 8.5*m 9.1*m 8.5*m
+:solid box4 BOX 8*m 8*m 9.2*m
+
+:solid frame1 SUBTRACTION box1 box2 r000 0 0 0 
+:solid frame2 SUBTRACTION frame1 box3 r000 0 0 0
+:solid frame SUBTRACTION frame2 box4 r000 0 0 0 
+
+//:volu box1_log box1 G4_Ge
+//:volu box2_log box2 G4_Ge
+//:volu box3_log box3 G4_Ge
+//:volu box4_log box4 G4_Ge
+
+:volu frame_log frame G4_AIR
+
+:place frame_log 1 world r000 0 0 0
+
+:color frame_log 0.9 0.9 0
+
+:vis world OFF
