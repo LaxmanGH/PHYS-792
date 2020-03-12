@@ -9,7 +9,7 @@
 /vis/viewer/set/viewpointThetaPhi 20 30
 /vis/viewer/flush
 
-# all the rest fail
+# all the rest fail if you have a dimension of a box that matches exactly with a dimension of other box
 /vis/open VRML2FILE
 /vis/drawVolume
 /vis/viewer/flush
