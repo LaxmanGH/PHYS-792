@@ -38,6 +38,42 @@
 + Transportation
 + Compton Scattering
 + Ionization
+# Example of a macro file:
 
+```sh
+# print macro commands on screen
+/control/verbose 1
+# geometry must be specified before /run/initialize
+/geometry/source detector.tg
+# initialize geometry and physics
+/run/initialize
+
+# change particle and its energy here
+/gps/particle gamma
+/gps/energy 2.6 MeV
+/gps/ang/type iso
+
+# visualize geometry and events for debugging
+/vis/open HepRepFile
+/vis/drawVolume
+/vis/scene/add/trajectories
+/vis/scene/endOfEventAction accumulate 10
+
+# turn on detailed information about tracking
+/tracking/verbose 2
+# dump a few events on screen for debugging
+/run/beamOn 10
+
+# turn off screen printing for fast simulation
+/vis/disable
+/tracking/verbose 0
+# turn on data recording
+/analysis/setFileName output
+# turn on progress report
+/run/verbose 2
+/run/printProgress 1000
+# start simulation
+/run/beamOn 50000
+```
 
 
