@@ -73,7 +73,7 @@ root [] t->Draw("z","k[0]>300 && trk==1 && vlm==1","same")
 
  ## Define optical properties of a material
 
-~~cpp
+~~~cpp
 //:prop <material>
 //  <wavelength-independent_property> <value>
 :prop pureCsIat77K
@@ -89,7 +89,7 @@ root [] t->Draw("z","k[0]>300 && trk==1 && vlm==1","same")
   photon_energies 2 2.034*eV, 3.025*eV, 4.136*eV
   RINDEX 1.34, 1.35, 1.36
   ABSLENGTH 1.0*meter, 1.1*meter, 1.2*meter
-~~
+~~~
 
 ## Define optical properties of a surface
 
@@ -98,7 +98,7 @@ the [G4OpBoundaryProcess][]::[PostStepDoIt][] will handle the refraction and ref
 
 One can use the following syntax to define a [G4LogicalBorderSurface][] in case that there is a real need to specify the optical properties of the interface:
 
-~~cpp
+~~~cpp
 //:surf v12v2 v1:copyNo1 v2:copyNo2
 :surf CsI2Teflon CsI:1 Teflon:1
   type dielectric_dielectric
@@ -108,7 +108,7 @@ One can use the following syntax to define a [G4LogicalBorderSurface][] in case 
   property photon_energies 2 2.5*eV 5.0*eV
     REFLECTIVITY 0.9 0.9
 //property must be the last setting due to the current coding method
-~~
+~~~
 
 Note that physics volumes from the same logical volume created by the text geometry processor share the same name as their logical volume. Since [G4LogicalBorderSurface][] requires pointers to the two ph\
 ysical volumes beside, a unique copy number has to be attached to the volume name to uniquely identify the physics volume.
