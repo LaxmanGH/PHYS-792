@@ -11,7 +11,7 @@ An [outdated webpage](http://hurel.hanyang.ac.kr/Geant4/Geant4_GPS/reat.space.qi
 
 ## GPS macros
 
-An ASCII version of the manual of [gps][] macros is available [here]({{site.xyz}}/examples/sources/gps.txt).
+An ASCII version of the manual of [gps][] macros is available [here]({{site.xyz}}/sources/gps.txt).
 
 ### Source in a volume
 
