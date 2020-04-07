@@ -1,4 +1,5 @@
 
+ATTENTION::Everything written here are copied from our professor Dr. Jing Liu's github repo
 
 An [outdated webpage](http://hurel.hanyang.ac.kr/Geant4/Geant4_GPS/reat.space.qinetiq.com/gps/examples/examples.html) shows most of the examples. In addition, it also shows resulted distribution plots, which are very helpful to understand the real effects of the [gps][] macro commands.
 
