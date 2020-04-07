@@ -110,8 +110,7 @@ One can use the following syntax to define a [G4LogicalBorderSurface][] in case 
 //property must be the last setting due to the current coding method
 ~~~
 
-Note that physics volumes from the same logical volume created by the text geometry processor share the same name as their logical volume. Since [G4LogicalBorderSurface][] requires pointers to the two ph\
-ysical volumes beside, a unique copy number has to be attached to the volume name to uniquely identify the physics volume.
+Note that physics volumes from the same logical volume created by the text geometry processor share the same name as their logical volume. Since [G4LogicalBorderSurface][] requires pointers to the two physical volumes beside, a unique copy number has to be attached to the volume name to uniquely identify the physics volume.
 
 [GEARS]: http://physino.xyz/gears
 [tg]: {{site.g4doc}}/Detector/Geometry/geomASCII.html
