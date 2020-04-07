@@ -2,10 +2,10 @@
 
 An [outdated webpage](http://hurel.hanyang.ac.kr/Geant4/Geant4_GPS/reat.space.qinetiq.com/gps/examples/examples.html) shows most of the examples. In addition, it also shows resulted distribution plots, which are very helpful to understand the real effects of the [gps][] macro commands.
 
-[Geant4][] also provide a much simpler particle source [particle gun] which is less powerful, but covers some basic user cases.
+[Geant4][] also provide a much simpler particle source [particle gun]() which is less powerful, but covers some basic user cases.
 
 [Geant4]: http://geant4.cern.ch
-[gps]:{{site.g4doc}}/GettingStarted/generalParticleSource.html
+[gps]:http://geant4-userdoc.web.cern.ch/geant4-userdoc/UsersGuides/ForApplicationDeveloper/html/GettingStarted/generalParticleSource.html?highlight=general%20particle%20source
 [primary particles]: {{site.g4doc}}/Fundamentals/eventGenerator.html
 
 ## GPS macros
@@ -40,23 +40,23 @@ Am241 is a complicated source. It is an alpha, X-ray and gamma emitter at the sa
 
 ### AmBe
 
-The alpha partiles emitted from Am241 can be used to bonbust Be and generate neutrons up to about 12 MeV. The measured neutron energy spectrum can be found in the literature. A mac file [AmBe.mac] is included here to demonstrate how to generate neutrons based on an energy spectrum.
+The alpha partiles emitted from Am241 can be used to bonbust Be and generate neutrons up to about 12 MeV. The measured neutron energy spectrum can be found in the literature. A mac file [AmBe.mac]() is included here to demonstrate how to generate neutrons based on an energy spectrum.
 
 ### Ar39
 
-Ar39 is a beta emitter. It is a common background for examples ulitize liquid argon as detecting material. Its measured beta spectrum is implemented in the mac file [Ar39.mac].
+Ar39 is a beta emitter. It is a common background for examples ulitize liquid argon as detecting material. Its measured beta spectrum is implemented in the mac file [Ar39.mac]().
 
 ### Co57
 
-Co57 is a common low-energy calibration source. It emits a few x and gamma-rays as shown in [Co57.mac].
+Co57 is a common low-energy calibration source. It emits a few x and gamma-rays as shown in [Co57.mac]().
 
 ### Fe55
 
-Fe55 is an other commonly used low-energy calibration source. It emits a few x-rays around 6 keV as shown in [Fe55.mac].
+Fe55 is an other commonly used low-energy calibration source. It emits a few x-rays around 6 keV as shown in [Fe55.mac]().
 
 ## Retrieve information of primary particles
 
-[Co57HPGe.mac] modifies some default settings of a Co57 source defined in [Co57.mac]() and shoots the emitted photons to a HPGe detector defined in [HPGe.tg](HPGe.tg). The following commands show how to retrieve information of the primary particles in this simulation and use it to make event selections:
+[Co57HPGe.mac]() modifies some default settings of a Co57 source defined in [Co57.mac]() and shoots the emitted photons to a HPGe detector defined in [HPGe.tg](). The following commands show how to retrieve information of the primary particles in this simulation and use it to make event selections:
 
 ```cpp
 // check primary particle energy distribution
