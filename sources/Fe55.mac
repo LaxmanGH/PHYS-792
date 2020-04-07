@@ -1,0 +1,42 @@
+/control/alias srcpos "0 0 0"
+
+# http://nucleardata.nuclear.lu.se/toi/nuclide.asp?iZA=260055
+
+# X-ray 1
+/gps/source/add 0.0854 # 8.54%
+/gps/particle gamma
+/gps/pos/type Point
+/gps/pos/centre {srcpos}
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 5.888 keV
+
+# X-ray 2
+/gps/source/add 0.1698 # 16.98%
+/gps/particle gamma
+/gps/pos/type Point
+/gps/pos/centre {srcpos}
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 5.899 keV
+
+# X-ray 3
+/gps/source/add 0.0101 # 1.01%
+/gps/particle gamma
+/gps/pos/type Point
+/gps/pos/centre {srcpos}
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 6.490 keV
+
+# X-ray 4
+/gps/source/add 0.0198 # 1.98%
+/gps/particle gamma
+/gps/pos/type Point
+/gps/pos/centre {srcpos}
+/gps/ang/type iso
+/gps/ene/type Mono
+/gps/ene/mono 6.490 keV
+
+# list all sources
+/gps/source/list
